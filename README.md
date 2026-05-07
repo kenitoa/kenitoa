@@ -16,9 +16,6 @@
 <a href="https://github.com/kenitoa">
   <img src="https://img.shields.io/badge/GitHub-kenitoa-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-<a href="https://war-archive.tail498403.ts.net/">
-  <img src="https://img.shields.io/badge/Live-War%20Archive-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" />
-</a>
 <a href="mailto:kiseno3231@gmail.com">
   <img src="https://img.shields.io/badge/Email-kiseno3231%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
