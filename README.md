@@ -340,12 +340,27 @@ Unity에서 재사용할 수 있는 C# 스크립트 모음 저장소입니다.
 
 ## GitHub Stats
 
-<div align="center">
+### Repository Language Share
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api?username=kenitoa&show_icons=true&theme=tokyonight&hide_border=true" />
-<img width="36%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kenitoa&layout=compact&theme=tokyonight&hide_border=true" />
+공개 + 비공개 전체 저장소 기준으로 사용 언어를 집계했습니다.  
+외부 통계 이미지 대신 README에서 바로 보이는 정적 퍼센트 표로 관리합니다.
 
-</div>
+| Language | Share | Bytes |
+|---|---:|---:|
+| JavaScript | 42.62% | 1,836,154 |
+| Python | 13.46% | 579,721 |
+| CSS | 9.95% | 428,558 |
+| C# | 9.10% | 391,797 |
+| Java | 7.26% | 312,937 |
+| HTML | 6.21% | 267,710 |
+| TypeScript | 5.51% | 237,481 |
+| SQL | 4.12% | 177,679 |
+| YAML | 0.52% | 22,610 |
+| XML | 0.52% | 22,264 |
+| Wolfram Language | 0.36% | 15,479 |
+| PowerShell | 0.18% | 7,846 |
+| Batchfile | 0.11% | 4,868 |
+| Shell | 0.06% | 2,635 |
 
 ---
 
