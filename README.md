@@ -7,21 +7,24 @@
 아이디어를 실제로 동작하는 프로그램으로 만들고,  
 완성 과정과 배운 점을 공개 저장소에 남기고 있습니다.
 
-<a href="https://kiseno3231.tistory.com/">
-  <img src="https://img.shields.io/badge/Blog-Tistory-FF5A4A?style=for-the-badge&logo=tistory&logoColor=white" />
-</a>
-<a href="https://github.com/kenitoa?tab=repositories">
-  <img src="https://img.shields.io/badge/Public%20Repos-8-2563EB?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://www.instagram.com/kiseno3231/">
-  <img src="https://img.shields.io/badge/Instagram-kiseno3231-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-</a>
-<a href="https://x.com/gimdong42753841">
-  <img src="https://img.shields.io/badge/X-gimdong42753841-000000?style=for-the-badge&logo=x&logoColor=white" />
-</a>
-<a href="mailto:kiseno3231@gmail.com">
-  <img src="https://img.shields.io/badge/Email-kiseno3231%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+<p>
+  <a href="https://kiseno3231.tistory.com/">
+    <img src="https://img.shields.io/badge/Blog-Tistory-FF5A4A?style=flat-square&logo=tistory&logoColor=white" />
+  </a>
+  <a href="https://github.com/kenitoa?tab=repositories">
+    <img src="https://img.shields.io/badge/Public%20Repos-8-2563EB?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:kiseno3231@gmail.com">
+    <img src="https://img.shields.io/badge/Email-kiseno3231%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" />
+  </a>
+  <br/>
+  <a href="https://www.instagram.com/kiseno3231/">
+    <img src="https://img.shields.io/badge/Instagram-kiseno3231-E4405F?style=flat-square&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://x.com/gimdong42753841">
+    <img src="https://img.shields.io/badge/X-gimdong42753841-000000?style=flat-square&logo=x&logoColor=white" />
+  </a>
+</p>
 
 </div>
 
