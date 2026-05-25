@@ -44,7 +44,7 @@ X: <a href="https://x.com/gimdong42753841">x.com/gimdong42753841</a>
 
 | Repository | Changed Point | Link |
 |---|---|---|
-| War-Achive | 전쟁사 아카이브 프로젝트를 대표 웹 프로젝트로 정리하고, 공개 사이트 링크를 전면에 배치했습니다. | [Repo](https://github.com/kenitoa/War-Achive) · [Live](https://war-archive.tail498403.ts.net/) |
+| War-Achive | 전쟁사 아카이브 프로젝트를 대표 웹 프로젝트로 정리하고, 공개 사이트 링크를 전면에 배치했습니다. | [Repo](https://github.com/kenitoa/War-Achive) · [Live](https://knowtowars.netlify.app/) |
 | local-ai | 기존 README에 빠져 있던 로컬 AI 데스크톱 시스템을 공개 포트폴리오에 추가했습니다. | [Repo](https://github.com/kenitoa/local-ai) |
 | MuWorld | 리듬 게임 프로젝트를 대표 데스크톱 게임 프로젝트로 유지하고, 실제 화면 이미지를 함께 노출했습니다. | [Repo](https://github.com/kenitoa/MuWorld) |
 | gameProject | Unity/C# 게임 제작 실험 저장소를 별도 프로젝트 항목으로 정리했습니다. | [Repo](https://github.com/kenitoa/gameProject) |
