@@ -7,21 +7,6 @@
 아이디어를 실제로 동작하는 프로그램으로 만들고,  
 완성 과정과 배운 점을 공개 저장소에 남기고 있습니다.
 
-<table>
-<tr>
-<td align="left">
-
-<b>Links</b><br/>
-Blog: <a href="https://kiseno3231.tistory.com/">kiseno3231.tistory.com</a><br/>
-Public Repositories: <a href="https://github.com/kenitoa?tab=repositories">github.com/kenitoa?tab=repositories</a><br/>
-Email: <a href="mailto:kiseno3231@gmail.com">kiseno3231@gmail.com</a><br/>
-Instagram: <a href="https://www.instagram.com/kiseno3231/">instagram.com/kiseno3231</a><br/>
-X: <a href="https://x.com/gimdong42753841">x.com/gimdong42753841</a>
-
-</td>
-</tr>
-</table>
-
 </div>
 
 ---
