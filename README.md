@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:24292f,50:2f6fed,100:28a745&text=kenitoa&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Local%20AI%20%7C%20Games%20%7C%20Archive%20Web&descAlignY=60&descSize=16"
+    src="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:0d1117,45:2f6fed,100:2da44e&text=kenitoa&fontColor=ffffff&fontSize=52&fontAlignY=42&desc=Local%20AI%20Control%20Deck%20%7C%20Game%20Lab%20%7C%20Archive%20Web&descAlignY=64&descSize=16&animation=fadeIn"
     alt="kenitoa profile banner"
   />
 </p>
@@ -28,30 +28,64 @@
 
 ---
 
+## Control Deck
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <sub>MODE</sub><br>
+      <strong>Local-first Builder</strong><br><br>
+      <kbd>Windows</kbd> <kbd>Desktop</kbd> <kbd>AI Runtime</kbd>
+    </td>
+    <td width="33%" align="center">
+      <sub>LAB</sub><br>
+      <strong>Game Systems</strong><br><br>
+      <kbd>Unity</kbd> <kbd>C#</kbd> <kbd>Rhythm</kbd>
+    </td>
+    <td width="33%" align="center">
+      <sub>ARCHIVE</sub><br>
+      <strong>Structured Web</strong><br><br>
+      <kbd>History</kbd> <kbd>JSON</kbd> <kbd>3D Web</kbd>
+    </td>
+  </tr>
+</table>
+
 ## Profile
 
 로컬에서 직접 실행되는 도구, 게임 시스템, 공개 웹 프로젝트를 중심으로 작업합니다.<br>
 아래 저장소들은 현재 이 GitHub 프로필에서 공개로 확인되는 작업 공간입니다.
 
+## Project Constellation
+
+```mermaid
+flowchart LR
+  K((kenitoa))
+
+  K --> AI[local-ai]
+  K --> GAME[MuWorld]
+  K --> UNITY[Unity-Scripts]
+  K --> ARCHIVE[War-Achive]
+  K --> CAMPUS[-3D-]
+  K --> MINI[mini-project]
+
+  AI --> A1[Local chat]
+  AI --> A2[Model runtime]
+  GAME --> G1[Rhythm gameplay]
+  UNITY --> U1[Reusable scripts]
+  ARCHIVE --> W1[History records]
+  CAMPUS --> C1[Campus information]
+  MINI --> M1[Logic practice]
+
+  classDef core fill:#2f6fed,stroke:#ffffff,color:#ffffff;
+  classDef project fill:#0d1117,stroke:#2da44e,color:#ffffff;
+  classDef signal fill:#161b22,stroke:#8a63d2,color:#ffffff;
+
+  class K core;
+  class AI,GAME,UNITY,ARCHIVE,CAMPUS,MINI project;
+  class A1,A2,G1,U1,W1,C1,M1 signal;
+```
+
 ## Featured Work
-
-<p align="center">
-  <a href="https://github.com/kenitoa/local-ai">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=local-ai&theme=github_dark_dimmed&hide_border=true&border_radius=8" alt="local-ai repository card">
-  </a>
-  <a href="https://github.com/kenitoa/MuWorld">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=MuWorld&theme=github_dark_dimmed&hide_border=true&border_radius=8" alt="MuWorld repository card">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kenitoa/War-Achive">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=War-Achive&theme=github_dark_dimmed&hide_border=true&border_radius=8" alt="War-Achive repository card">
-  </a>
-  <a href="https://github.com/kenitoa/-3D-">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=-3D-&theme=github_dark_dimmed&hide_border=true&border_radius=8" alt="-3D- repository card">
-  </a>
-</p>
 
 <table>
   <tr>
@@ -84,15 +118,6 @@
 
 ## Project Library
 
-<p align="center">
-  <a href="https://github.com/kenitoa/Unity-Scripts">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=Unity-Scripts&theme=default&hide_border=true&border_radius=8" alt="Unity-Scripts repository card">
-  </a>
-  <a href="https://github.com/kenitoa/mini-project">
-    <img width="410" src="https://github-readme-stats.vercel.app/api/pin/?username=kenitoa&repo=mini-project&theme=default&hide_border=true&border_radius=8" alt="mini-project repository card">
-  </a>
-</p>
-
 | Repository | What it is | Main area |
 | --- | --- | --- |
 | [Unity-Scripts](https://github.com/kenitoa/Unity-Scripts) | 게임 제작에 필요한 Unity 스크립트를 정리한 저장소입니다. | Unity / C# |
@@ -120,7 +145,7 @@
 
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=90&section=footer&color=0:28a745,50:2f6fed,100:24292f"
+    src="https://capsule-render.vercel.app/api?type=slice&height=100&section=footer&color=0:2da44e,50:2f6fed,100:0d1117"
     alt="footer wave"
   />
 </p>
