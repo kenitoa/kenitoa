@@ -1,0 +1,78 @@
+<svg width="1100" height="260" viewBox="0 0 1100 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Animated repository launch gate</title>
+  <defs>
+    <linearGradient id="gateBg" x1="0" y1="0" x2="1100" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.45" stop-color="#111827"/>
+      <stop offset="1" stop-color="#071B2F"/>
+    </linearGradient>
+    <linearGradient id="gateRail" x1="70" y1="0" x2="1030" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.28" stop-color="#EC4899"/>
+      <stop offset="0.56" stop-color="#A78BFA"/>
+      <stop offset="0.82" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="gateGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gateGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#E5E7EB" stroke-opacity="0.055"/>
+    </pattern>
+  </defs>
+
+  <rect width="1100" height="260" rx="24" fill="url(#gateBg)"/>
+  <rect x="18" y="18" width="1064" height="224" rx="18" fill="url(#gateGrid)"/>
+  <rect x="18" y="18" width="1064" height="224" rx="18" stroke="#475569" stroke-opacity="0.52"/>
+
+  <g opacity="0.92">
+    <path d="M92 56H1008" stroke="url(#gateRail)" stroke-width="3" stroke-linecap="round" stroke-dasharray="18 18">
+      <animate attributeName="stroke-dashoffset" from="0" to="-216" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M92 204H1008" stroke="url(#gateRail)" stroke-width="3" stroke-linecap="round" stroke-dasharray="18 18">
+      <animate attributeName="stroke-dashoffset" from="-216" to="0" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g filter="url(#gateGlow)">
+    <path d="M336 72L244 130L336 188" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M764 72L856 130L764 188" stroke="#34D399" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="1;0.45;1" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect x="386" y="76" width="328" height="108" rx="18" fill="#020617" fill-opacity="0.78" stroke="url(#gateRail)" stroke-width="2"/>
+  <rect x="408" y="98" width="284" height="2" rx="1" fill="url(#gateRail)">
+    <animate attributeName="y" values="98;160;98" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="550" y="121" text-anchor="middle" fill="#E5E7EB" font-family="Consolas, monospace" font-size="18">REPOSITORY GATE</text>
+  <text x="550" y="151" text-anchor="middle" fill="#FFFFFF" font-family="Consolas, monospace" font-size="34" font-weight="700">OPEN PUBLIC MAP</text>
+  <text x="550" y="173" text-anchor="middle" fill="#A7F3D0" font-family="Consolas, monospace" font-size="15">8 public repos / 7 work repos</text>
+
+  <g font-family="Consolas, monospace" font-size="14">
+    <text x="96" y="104" fill="#93C5FD">01 local-ai</text>
+    <text x="96" y="130" fill="#F9A8D4">02 CozyNote</text>
+    <text x="96" y="156" fill="#DDD6FE">03 MuWorld</text>
+    <text x="96" y="182" fill="#BBF7D0">04 War-Achive</text>
+    <text x="894" y="104" fill="#BAE6FD">05 -3D-</text>
+    <text x="894" y="130" fill="#C4B5FD">06 Unity</text>
+    <text x="894" y="156" fill="#FDE68A">07 Python</text>
+    <text x="894" y="182" fill="#CBD5E1">08 profile</text>
+  </g>
+
+  <circle cx="550" cy="130" r="82" stroke="url(#gateRail)" stroke-width="2" stroke-dasharray="4 12" opacity="0.75">
+    <animateTransform attributeName="transform" type="rotate" from="0 550 130" to="360 550 130" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="130" r="96" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.22">
+    <animate attributeName="r" values="88;106;88" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.48;0.15" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
