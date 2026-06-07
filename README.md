@@ -176,33 +176,39 @@ PHOTO POLICY ::  screenshot slots are marked as "(사진 추가)"
 
 ## 04 Signal Map
 
-```text
-kenitoa
-|
-+-- local tools
-|   +-- local-ai
-|   +-- CozyNote
-|
-+-- game / unity
-|   +-- MuWorld
-|   +-- Unity-Scripts
-|
-+-- web / archive
-|   +-- War-Achive
-|   +-- -3D-
-|
-+-- practice
-    +-- mini-project
+```mermaid
+flowchart LR
+    K((kenitoa))
+
+    K --> B[Build<br/>실행되는 도구]
+    K --> P[Play<br/>게임 시스템]
+    K --> R[Record<br/>아카이브 화면]
+    K --> T[Practice<br/>작은 로직 실험]
+
+    B --> LT[local tools]
+    LT --> LA[local-ai]
+    LT --> CN[CozyNote]
+
+    P --> GU[game / unity]
+    GU --> MW[MuWorld]
+    GU --> US[Unity-Scripts]
+
+    R --> WA[web / archive]
+    WA --> WAR[War-Achive]
+    WA --> D3[-3D-]
+
+    T --> MP[mini-project]
+
+    classDef root fill:#111827,stroke:#38bdf8,color:#f8fafc,stroke-width:2px;
+    classDef signal fill:#1f2937,stroke:#64748b,color:#f8fafc;
+    classDef group fill:#0f172a,stroke:#475569,color:#e2e8f0;
+    classDef repo fill:#020617,stroke:#334155,color:#cbd5e1;
+    class K root;
+    class B,P,R,T signal;
+    class LT,GU,WA group;
+    class LA,CN,MW,US,WAR,D3,MP repo;
 ```
 
-<table>
-  <tr>
-    <td width="25%" align="center"><strong>Build</strong><br><sub>실행되는 도구</sub></td>
-    <td width="25%" align="center"><strong>Play</strong><br><sub>게임 시스템</sub></td>
-    <td width="25%" align="center"><strong>Record</strong><br><sub>아카이브 데이터</sub></td>
-    <td width="25%" align="center"><strong>Practice</strong><br><sub>작은 로직 실험</sub></td>
-  </tr>
-</table>
 
 <p align="center">
   <a href="https://github.com/kenitoa?tab=repositories">
