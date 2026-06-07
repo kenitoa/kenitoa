@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/workshop-motion.svg" alt="Animated kenitoa public workshop header">
+</p>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -34,6 +38,13 @@
   </tr>
 </table>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/LOCAL_AI-ONLINE-38BDF8?style=for-the-badge">
+  <img src="https://img.shields.io/badge/GAME_LAB-ACTIVE-A78BFA?style=for-the-badge">
+  <img src="https://img.shields.io/badge/ARCHIVE_WEB-LIVE-34D399?style=for-the-badge">
+  <img src="https://img.shields.io/badge/PYTHON_LOGIC-RUNNING-F59E0B?style=for-the-badge">
+</p>
+
 <table>
   <tr>
     <td align="center"><kbd>LOCAL AI</kbd></td>
@@ -45,6 +56,11 @@
 </table>
 
 ## 01 Main Systems
+
+```text
+COLOR ROUTE  ::  cyan -> violet -> green -> amber
+MOTION LAYER ::  ./assets/workshop-motion.svg
+```
 
 <table>
   <tr>
