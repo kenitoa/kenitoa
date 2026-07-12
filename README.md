@@ -32,8 +32,8 @@ LABORATORY NOTE / KENITOA
 <p align="center"><strong>감각 입력과 기억, 언어, 음성, 움직임을 하나의 로컬 존재로 연결하는 실험</strong></p>
 
 ```text
-┌─ OBSERVE ─────────┐   ┌─ REASON ─────────────────┐   ┌─ EXPRESS ───────────┐
-│ camera · microphone│──▶│ STT · memory · RAG · LLM │──▶│ TTS · face · motion │
+┌─ OBSERVE ─────────┐    ┌─ REASON ─────────────────┐    ┌─ EXPRESS ───────────┐
+│camera · microphone│──▶│ STT · memory · RAG · LLM │──▶│ TTS · face · motion  │
 └────────────────────┘   └───────────────────────────┘   └─────────────────────┘
            ▲                         │                              │
            └─────────────────────────┴──── continuous feedback ─────┘
@@ -139,10 +139,10 @@ LABORATORY NOTE / KENITOA
        QUESTION              PROTOTYPE              INTEGRATION             PROOF
           │                      │                       │                     │
           ▼                      ▼                       ▼                     ▼
-   ┌────────────┐         ┌────────────┐          ┌────────────┐        ┌────────────┐
-   │ define the │────────▶│ make the   │─────────▶│ connect the│───────▶│ test the   │
-   │ real need  │         │ core real  │          │ whole flow │        │ real path  │
-   └────────────┘         └────────────┘          └────────────┘        └────────────┘
+   ┌────────────┐          ┌────────────┐           ┌────────────┐        ┌────────────┐
+   │ define the │────────▶│ make the   │─────────▶│ connect the │───────▶│ test the   │
+   │ real need  │          │ core real  │           │ whole flow │        │ real path  │
+   └────────────┘          └────────────┘           └────────────┘        └────────────┘
           ▲                                                                    │
           └────────────────── failure becomes new evidence ────────────────────┘
 ```
