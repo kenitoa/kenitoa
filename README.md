@@ -1,224 +1,196 @@
 <p align="center">
-  <img src="./assets/workshop-motion.svg" alt="Kenitoa portfolio — local AI, desktop experiences and automation systems" width="100%">
-</p>
-
-<h1 align="center">아이디어를 실제로 쓰는 시스템까지.</h1>
-
-<p align="center">
-  <strong>Local AI · Desktop Experience · Automation · Experimental Interfaces</strong><br>
-  모델 호출에서 멈추지 않고, 입력·판단·기억·음성·화면·실행까지 연결하는 개인 개발 포트폴리오입니다.
+  <img src="./assets/lab-hero.svg" width="100%" alt="KENITOA Systems Research Laboratory animated console">
 </p>
 
 <p align="center">
-  <a href="#featured-systems"><img src="https://img.shields.io/badge/EXPLORE-FEATURED_SYSTEMS-38BDF8?style=for-the-badge" alt="Explore featured systems"></a>
-  <a href="https://github.com/kenitoa?tab=repositories"><img src="https://img.shields.io/badge/OPEN-ALL_REPOSITORIES-A78BFA?style=for-the-badge&logo=github" alt="Open all repositories"></a>
+  <code>LOCAL INTELLIGENCE</code>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <code>HUMAN INTERFACE</code>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <code>PERSONAL AUTOMATION</code>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <code>PLAYABLE SYSTEMS</code>
 </p>
 
+<br>
+
+```text
+LABORATORY NOTE / KENITOA
+──────────────────────────────────────────────────────────────────────────────
+연구 질문     소프트웨어가 단순한 도구를 넘어, 보고 듣고 판단하고 반응할 수 있을까?
+연구 방식     작은 아이디어를 실제 입력과 출력이 존재하는 완전한 시스템으로 만든다.
+실험 환경     Windows · Local-first · Desktop · AI · Automation
+완료 기준     실행됨이 아니라, 사용 흐름과 실패 경로가 함께 검증됨.
+──────────────────────────────────────────────────────────────────────────────
+```
+
+> **이곳은 완성품 진열장이 아니라 시스템 연구실입니다.**<br>
+> 각 저장소는 하나의 가설에서 출발해, 사용자에게 닿는 인터페이스와 검증 가능한 실행 흐름으로 발전합니다.
+
+<br>
+
+## `00 / PRIMARY RESEARCH`
+
+<h3 align="center">EXP–α01 · MIKU VIRTUAL AI</h3>
+<p align="center"><strong>감각 입력과 기억, 언어, 음성, 움직임을 하나의 로컬 존재로 연결하는 실험</strong></p>
+
+```text
+┌─ OBSERVE ─────────┐   ┌─ REASON ─────────────────┐   ┌─ EXPRESS ───────────┐
+│ camera · microphone│──▶│ STT · memory · RAG · LLM │──▶│ TTS · face · motion │
+└────────────────────┘   └───────────────────────────┘   └─────────────────────┘
+           ▲                         │                              │
+           └─────────────────────────┴──── continuous feedback ─────┘
+```
+
+**Abstract.** [Miku](https://github.com/kenitoa/Miku)는 화면 위의 Live2D 캐릭터가 사용자를 보고 듣고, 대화 맥락을 구성하고, 로컬 LLM으로 판단한 뒤 음성·표정·모션으로 응답하도록 만든 버추얼 AI 작업공간입니다. 카메라와 마이크, FunASR, pre-RAG, Ollama, post-RAG, GPT-SoVITS, Live2D를 분리된 책임 영역으로 설계하고 하나의 실시간 대화 런타임으로 연결합니다.
+
+`APPARATUS`　Live2D / Electron / FunASR / RAG / Ollama / GPT-SoVITS<br>
+`SIGNAL`　　　speech detection → context composition → local inference → embodied response<br>
+`EVIDENCE`　　로컬 기능 gate, 실제 장치 입력, 지연 측정, 실패 시 CPU fallback 기록<br>
+`ENTRY`　　　 [실험 저장소 열기 →](https://github.com/kenitoa/Miku)
+
+<br>
+
+## `01 / LABORATORY FLOORPLAN`
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-automation_%26_AI-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/C%23-.NET_%26_game_systems-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C sharp and dotnet">
-  <img src="https://img.shields.io/badge/Java-JavaFX_desktop-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Electron-Live2D_desktop-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron">
-  <img src="https://img.shields.io/badge/PowerShell-Windows_tooling-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell">
-  <img src="https://img.shields.io/badge/SQLite-local--first_data-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+  <a href="https://github.com/kenitoa?tab=repositories">
+    <img src="./assets/research-floorplan.svg" width="100%" alt="Map of Kenitoa research projects grouped into intelligence, interface, automation and simulation wings">
+  </a>
 </p>
+
+<p align="center"><sub>각 신호실은 실제 공개 저장소로 이어집니다. 평면도를 누르면 전체 연구 목록이 열립니다.</sub></p>
+
+<br>
+
+## `02 / EXPERIMENT REGISTRY`
+
+### `EXP–β02`　LOCAL AI ORCHESTRATION
+
+**Hypothesis**　서로 다른 AI 모델을 하나의 인터페이스 뒤에서 선택·조합·검증할 수 있다.<br>
+**Apparatus**　`C#` `ASP.NET` `WPF` `WebView2` `Ollama` `ONNX`<br>
+**Result**　　　Router → Executor → Aggregator → Judge로 이어지는 Windows 로컬 AI 런타임<br>
+**Archive**　　[kenitoa/local-ai](https://github.com/kenitoa/local-ai)
 
 ---
 
-<table>
-  <tr>
-    <td width="58%" valign="top">
-      <h2>What I build</h2>
-      <p>
-        저는 <strong>PC 안에서 스스로 동작하는 AI</strong>, 사람이 바로 실행할 수 있는
-        <strong>데스크톱 도구</strong>, 반복 작업을 제품으로 바꾸는
-        <strong>자동화 시스템</strong>을 만듭니다.
-      </p>
-      <p>
-        각 저장소는 단순한 코드 샘플보다 <code>입력 → 처리 → 검증 → 사용자 경험</code>의
-        전체 흐름을 갖추는 데 초점을 둡니다.
-      </p>
-    </td>
-    <td width="42%" valign="top">
-      <h2>Build signature</h2>
-      <pre>LOCAL-FIRST   keep data close
-SYSTEM-MINDED connect the pipeline
-USER-READY    one clear entrypoint
-VERIFIABLE    prove the real flow</pre>
-    </td>
-  </tr>
-</table>
+### `EXP–γ03`　COGNITIVE NOTE ENVIRONMENT
 
-## Featured Systems
+**Hypothesis**　기록, 자동 저장, 보상, 음악을 결합하면 메모가 하나의 생활 환경이 된다.<br>
+**Apparatus**　`Java 21` `JavaFX` `Gradle` `SQLite` `Block editor`<br>
+**Result**　　　800ms 지연 자동 저장과 체크리스트 보상 루프를 가진 블록형 데스크톱 메모장<br>
+**Archive**　　[kenitoa/CozyNote](https://github.com/kenitoa/CozyNote)
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>01 · <a href="https://github.com/kenitoa/Miku">Miku Virtual AI</a> <sup>NEW</sup></h3>
-      <p><strong>보고, 듣고, 기억하고, 말하며 움직이는 로컬 버추얼 AI 런타임</strong></p>
-      <p>카메라·마이크부터 STT, RAG, 로컬 LLM, TTS, Live2D 반응까지 책임 영역을 분리해 하나의 실시간 대화 파이프라인으로 연결했습니다.</p>
-      <p><code>Live2D</code> <code>Electron</code> <code>FunASR</code> <code>Ollama</code> <code>RAG</code> <code>GPT-SoVITS</code></p>
-      <pre>SEE + HEAR → THINK → SPEAK + MOVE</pre>
-      <a href="https://github.com/kenitoa/Miku"><strong>시스템 살펴보기 →</strong></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>02 · <a href="https://github.com/kenitoa/local-ai">local-ai</a></h3>
-      <p><strong>여러 AI expert를 하나의 Windows 앱으로 다루는 로컬 AI 플랫폼</strong></p>
-      <p>Router, Executor, Aggregator, Judge 구조로 Ollama·.NET·ONNX 모델을 공통 Expert 규격 아래 조합하고 검증합니다.</p>
-      <p><code>C#</code> <code>ASP.NET</code> <code>WPF</code> <code>WebView2</code> <code>Ollama</code> <code>ONNX</code></p>
-      <pre>REQUEST → ROUTE → EXPERTS → JUDGE</pre>
-      <a href="https://github.com/kenitoa/local-ai"><strong>아키텍처 살펴보기 →</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>03 · <a href="https://github.com/kenitoa/CozyNote">CozyNote</a></h3>
-      <p><strong>기록과 보상을 결합한 블록형 데스크톱 메모 앱</strong></p>
-      <p>JavaFX 블록 에디터, 800ms 지연 자동 저장, SQLite, 검색·필터, 체크리스트 포인트와 음악/꾸미기 위젯을 한 화면에 담았습니다.</p>
-      <p><code>Java 21</code> <code>JavaFX</code> <code>Gradle</code> <code>SQLite</code></p>
-      <pre>WRITE → AUTO SAVE → COMPLETE → REWARD</pre>
-      <a href="https://github.com/kenitoa/CozyNote"><strong>앱 살펴보기 →</strong></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>04 · <a href="https://github.com/kenitoa/automade-web-site">Interface Auto Builder</a></h3>
-      <p><strong>드래그로 조립하고 실행 가능한 웹사이트로 저장하는 비주얼 빌더</strong></p>
-      <p>폼·테이블·차트·탭 같은 기능 블록을 캔버스에 배치하고, 실제 동작을 미리 본 뒤 독립 실행 폴더로 내보냅니다.</p>
-      <p><code>Visual Builder</code> <code>Drag & Drop</code> <code>Live Preview</code> <code>Export</code></p>
-      <pre>COMPOSE → PREVIEW → EXPORT → RUN</pre>
-      <a href="https://github.com/kenitoa/automade-web-site"><strong>빌더 살펴보기 →</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>05 · <a href="https://github.com/kenitoa/auto-folder">auto-folder</a></h3>
-      <p><strong>문서의 구조를 읽어 실제 폴더 트리로 만드는 Windows 자동화</strong></p>
-      <p>Markdown, TXT, DOCX, HWPX의 명시적 트리나 제목 계층을 해석합니다. dry-run과 경로 안전성 검증을 거친 뒤 폴더를 생성합니다.</p>
-      <p><code>PowerShell</code> <code>DOCX XML</code> <code>HWPX XML</code> <code>Safe Paths</code></p>
-      <pre>DOCUMENT → PARSE → VALIDATE → FOLDERS</pre>
-      <a href="https://github.com/kenitoa/auto-folder"><strong>자동화 살펴보기 →</strong></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>06 · <a href="https://github.com/kenitoa/text-to-make-question">Text To Make Question</a></h3>
-      <p><strong>한국어 발화의 핵심어를 찾아 자연스러운 후속 질문으로 바꾸는 엔진</strong></p>
-      <p>외부 형태소 분석기 없이 SQLite 규칙, 관측 데이터, 후보 승격 흐름을 사용하며 CLI와 STT 이벤트를 함께 처리합니다.</p>
-      <p><code>Python</code> <code>SQLite Rules</code> <code>Korean NLP</code> <code>STT Bridge</code></p>
-      <pre>UTTERANCE → KEYWORD → INTENT → QUESTION</pre>
-      <a href="https://github.com/kenitoa/text-to-make-question"><strong>엔진 살펴보기 →</strong></a>
-    </td>
-  </tr>
-</table>
+---
 
-## System Map
+### `EXP–δ04`　INTERFACE GENERATION CHAMBER
 
-프로젝트는 서로 달라도, 제가 해결하는 문제는 하나의 흐름으로 이어집니다.
+**Hypothesis**　코드를 직접 쓰지 않아도 기능 블록을 조립해 실행 가능한 웹사이트를 만들 수 있다.<br>
+**Apparatus**　`Drag & Drop` `Grid canvas` `Live preview` `Portable export`<br>
+**Result**　　　폼·표·차트·탭을 배치하고 독립 실행 폴더로 내보내는 비주얼 웹 빌더<br>
+**Archive**　　[kenitoa/automade-web-site](https://github.com/kenitoa/automade-web-site)
 
-```mermaid
-flowchart LR
-    U((USER)) --> I[INPUT]
+---
 
-    I --> S[See & Hear]
-    I --> D[Documents]
-    I --> C[Canvas]
+### `EXP–ε05`　DOCUMENT-TO-STRUCTURE CONVERTER
 
-    S --> M[Miku]
-    S --> Q[Question Engine]
-    D --> F[auto-folder]
-    C --> W[Interface Builder]
+**Hypothesis**　문서에 기록된 계층은 실제 작업공간의 폴더 구조로 변환될 수 있다.<br>
+**Apparatus**　`PowerShell` `Markdown` `DOCX XML` `HWPX XML` `Path validation`<br>
+**Result**　　　명시적 트리와 보고서 제목 구조를 해석하고 dry-run 후 안전하게 폴더를 생성<br>
+**Archive**　　[kenitoa/auto-folder](https://github.com/kenitoa/auto-folder)
 
-    M --> A[Local AI Runtime]
-    Q --> A
-    A --> X[Verified Response]
+---
 
-    F --> O[Useful Output]
-    W --> O
-    X --> O
+### `EXP–ζ06`　KOREAN QUESTION SYNTHESIS
 
-    O --> E[Desktop Experience]
+**Hypothesis**　외부 형태소 분석기 없이도 발화의 핵심을 찾아 다음 질문으로 연결할 수 있다.<br>
+**Apparatus**　`Python` `SQLite rules` `Korean NLP` `STT bridge` `Candidate promotion`<br>
+**Result**　　　규칙·관측·검토를 분리한 한국어 핵심어 및 후속 질문 생성 엔진<br>
+**Archive**　　[kenitoa/text-to-make-question](https://github.com/kenitoa/text-to-make-question)
 
-    classDef user fill:#020617,stroke:#38bdf8,color:#f8fafc,stroke-width:2px;
-    classDef input fill:#0f172a,stroke:#a78bfa,color:#f8fafc;
-    classDef system fill:#172554,stroke:#60a5fa,color:#eff6ff;
-    classDef output fill:#052e16,stroke:#34d399,color:#ecfdf5;
-    class U user;
-    class I,S,D,C input;
-    class M,Q,F,W,A system;
-    class X,O,E output;
+<br>
+
+## `03 / SPECIMEN CABINET`
+
+<details>
+  <summary><strong>SPECIMEN C-03 / CozyNote interface capture</strong></summary>
+  <br>
+  <p align="center">
+    <a href="https://github.com/kenitoa/CozyNote">
+      <img src="https://github.com/user-attachments/assets/5d4def09-a1f9-473d-bc5e-c9c37150af46" width="92%" alt="CozyNote JavaFX desktop interface">
+    </a>
+  </p>
+  <p align="center"><sub>Block editor · local persistence · music widget · reward loop</sub></p>
+</details>
+
+<details>
+  <summary><strong>SPECIMEN I-04 / Interface Auto Builder capture</strong></summary>
+  <br>
+  <p align="center">
+    <a href="https://github.com/kenitoa/automade-web-site">
+      <img src="https://github.com/user-attachments/assets/8bf7996c-29cf-4994-a943-a77dcd106413" width="92%" alt="Visual website interface builder">
+    </a>
+  </p>
+  <p align="center"><sub>Palette · spatial canvas · live preview · runnable export</sub></p>
+</details>
+
+<br>
+
+## `04 / RESEARCH METHOD`
+
+```text
+       QUESTION              PROTOTYPE              INTEGRATION             PROOF
+          │                      │                       │                     │
+          ▼                      ▼                       ▼                     ▼
+   ┌────────────┐         ┌────────────┐          ┌────────────┐        ┌────────────┐
+   │ define the │────────▶│ make the   │─────────▶│ connect the│───────▶│ test the   │
+   │ real need  │         │ core real  │          │ whole flow │        │ real path  │
+   └────────────┘         └────────────┘          └────────────┘        └────────────┘
+          ▲                                                                    │
+          └────────────────── failure becomes new evidence ────────────────────┘
 ```
 
-## Interface Gallery
+- `LOCAL FIRST` — 모델과 개인 데이터는 가능한 한 사용자의 PC 안에 둡니다.
+- `RESPONSIBILITY BOUNDARIES` — 감각, 판단, 기억, 표현, 저장의 책임을 분리합니다.
+- `ONE HUMAN ENTRYPOINT` — 복잡한 런타임도 사용자는 하나의 실행점에서 시작합니다.
+- `EVIDENCE OVER APPEARANCE` — fixture보다 실제 장치·실제 입력·실제 실패 기록을 우선합니다.
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/kenitoa/CozyNote">
-        <img src="https://github.com/user-attachments/assets/5d4def09-a1f9-473d-bc5e-c9c37150af46" alt="CozyNote JavaFX desktop interface" width="100%">
-      </a>
-      <br><sub><strong>CozyNote</strong> — block editor, local persistence and reward loop</sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/kenitoa/automade-web-site">
-        <img src="https://github.com/user-attachments/assets/8bf7996c-29cf-4994-a943-a77dcd106413" alt="Visual website interface builder" width="100%">
-      </a>
-      <br><sub><strong>Interface Auto Builder</strong> — compose, preview and export</sub>
-    </td>
-  </tr>
-</table>
+<br>
 
-## Engineering Principles
-
-<table>
-  <tr>
-    <td align="center" width="25%"><strong>LOCAL FIRST</strong><br><sub>개인 데이터와 모델을 가능한 한 PC 안에</sub></td>
-    <td align="center" width="25%"><strong>ONE ENTRYPOINT</strong><br><sub>복잡한 내부 구조를 한 번의 실행 뒤에</sub></td>
-    <td align="center" width="25%"><strong>BOUNDED SYSTEMS</strong><br><sub>입력·판단·출력의 책임을 분리해 연결</sub></td>
-    <td align="center" width="25%"><strong>PROOF OVER CLAIMS</strong><br><sub>실제 흐름과 실패 경로까지 검증</sub></td>
-  </tr>
-</table>
-
-## Project Index
+## `05 / ARCHIVE DRAWERS`
 
 <details>
-  <summary><strong>AI & interaction</strong> — 펼쳐서 저장소 보기</summary>
+  <summary><code>DRAWER A</code>　<strong>AI & language systems</strong></summary>
   <br>
-  <table>
-    <tr><td><a href="https://github.com/kenitoa/Miku"><strong>Miku</strong></a></td><td>Live2D 기반 로컬 버추얼 AI 동반자</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/local-ai"><strong>local-ai</strong></a></td><td>여러 AI expert를 조합하는 Windows 로컬 AI 런타임</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/text-to-make-question"><strong>text-to-make-question</strong></a></td><td>한국어 발화를 질문으로 전환하는 규칙 기반 엔진</td></tr>
-  </table>
+  <a href="https://github.com/kenitoa/Miku">Miku</a> ·
+  <a href="https://github.com/kenitoa/local-ai">local-ai</a> ·
+  <a href="https://github.com/kenitoa/text-to-make-question">text-to-make-question</a>
 </details>
 
 <details>
-  <summary><strong>Desktop & automation</strong> — 펼쳐서 저장소 보기</summary>
+  <summary><code>DRAWER B</code>　<strong>Human tools & automation</strong></summary>
   <br>
-  <table>
-    <tr><td><a href="https://github.com/kenitoa/CozyNote"><strong>CozyNote</strong></a></td><td>JavaFX 블록 메모장과 로컬 보상 루프</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/auto-folder"><strong>auto-folder</strong></a></td><td>문서 구조를 Windows 폴더 트리로 변환</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/automade-web-site"><strong>automade-web-site</strong></a></td><td>드래그 앤 드롭 웹 인터페이스 생성기</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/PC-search-all-file"><strong>PC-search-all-file</strong></a></td><td>PC 파일 탐색 실험</td></tr>
-  </table>
+  <a href="https://github.com/kenitoa/CozyNote">CozyNote</a> ·
+  <a href="https://github.com/kenitoa/auto-folder">auto-folder</a> ·
+  <a href="https://github.com/kenitoa/automade-web-site">automade-web-site</a> ·
+  <a href="https://github.com/kenitoa/PC-search-all-file">PC-search-all-file</a>
 </details>
 
 <details>
-  <summary><strong>Game, web & archive lab</strong> — 펼쳐서 저장소 보기</summary>
+  <summary><code>DRAWER C</code>　<strong>Simulation, game & archive studies</strong></summary>
   <br>
-  <table>
-    <tr><td><a href="https://github.com/kenitoa/MuWorld"><strong>MuWorld</strong></a></td><td>C# 기반 리듬 게임 프로젝트</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/War-Achive"><strong>War-Achive</strong></a></td><td>전쟁 기록 아카이브 웹 프로젝트</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/-3D-"><strong>-3D-</strong></a></td><td>건물·층별 정보를 탐색하는 3D 웹 실험</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/data-archive"><strong>data-archive</strong></a></td><td>공개 웹 데이터 아카이브</td></tr>
-    <tr><td><a href="https://github.com/kenitoa/mini-project"><strong>mini-project</strong></a></td><td>Python 로직과 알고리즘 실험 모음</td></tr>
-  </table>
+  <a href="https://github.com/kenitoa/MuWorld">MuWorld</a> ·
+  <a href="https://github.com/kenitoa/War-Achive">War-Achive</a> ·
+  <a href="https://github.com/kenitoa/-3D-">-3D-</a> ·
+  <a href="https://github.com/kenitoa/data-archive">data-archive</a> ·
+  <a href="https://github.com/kenitoa/mini-project">mini-project</a>
 </details>
 
 <br>
 
 <p align="center">
   <a href="https://github.com/kenitoa?tab=repositories">
-    <img src="./assets/repository-gate.svg" alt="Open every public repository in the Kenitoa portfolio" width="92%">
+    <img src="./assets/lab-exit.svg" width="100%" alt="Enter the open archive of Kenitoa repositories">
   </a>
 </p>
 
 <p align="center">
-  <strong>Explore the systems. Follow the experiments. Watch them become products.</strong><br>
-  <sub>이 README 자체도 GitHub Markdown, HTML, Mermaid, 자체 제작 animated SVG를 조합한 포트폴리오 인터페이스입니다.</sub>
+  <sub>README-native interface · animated SVG instrumentation · expandable specimen archive</sub>
 </p>

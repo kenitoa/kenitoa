@@ -1,0 +1,100 @@
+<svg width="1200" height="440" viewBox="0 0 1200 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>KENITOA Systems Research Laboratory</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#03070B"/>
+      <stop offset="0.48" stop-color="#07131A"/>
+      <stop offset="1" stop-color="#07100D"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="72" y1="0" x2="1128" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="0.48" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <radialGradient id="reactor" cx="0" cy="0" r="1" gradientTransform="translate(929 217) rotate(90) scale(146)">
+      <stop stop-color="#14B8A6" stop-opacity="0.18"/>
+      <stop offset="0.58" stop-color="#0EA5E9" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#94A3B8" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="viewport"><rect x="22" y="22" width="1156" height="396" rx="18"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="440" rx="24" fill="url(#bg)"/>
+  <rect x="22" y="22" width="1156" height="396" rx="18" fill="url(#microgrid)" stroke="#5EEAD4" stroke-opacity="0.22"/>
+
+  <g clip-path="url(#viewport)">
+    <rect x="22" y="22" width="1156" height="3" fill="url(#signal)" opacity="0.75"/>
+    <rect x="22" y="20" width="1156" height="54" fill="#5EEAD4" opacity="0.035">
+      <animate attributeName="y" values="20;418;20" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.01;0.08;0.01" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g font-family="Consolas, 'Courier New', monospace">
+    <circle cx="52" cy="51" r="5" fill="#5EEAD4" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.25;1;0.25" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <text x="68" y="57" fill="#99F6E4" font-size="14" letter-spacing="2">FACILITY ONLINE</text>
+    <text x="962" y="57" fill="#64748B" font-size="13">LAB-ID</text>
+    <text x="1022" y="57" fill="#E2E8F0" font-size="13">KNT-01</text>
+    <path d="M218 51H928" stroke="#334155" stroke-dasharray="3 9"/>
+
+    <text x="74" y="123" fill="#5EEAD4" font-size="15" letter-spacing="5">INDEPENDENT SYSTEMS RESEARCH</text>
+    <text x="70" y="184" fill="#F8FAFC" font-size="58" font-weight="700" letter-spacing="2">KENITOA</text>
+    <text x="70" y="241" fill="#F8FAFC" font-size="58" font-weight="700" letter-spacing="2">LABORATORY</text>
+    <text x="74" y="278" fill="#94A3B8" font-size="16" letter-spacing="1">LOCAL INTELLIGENCE / HUMAN INTERFACE / AUTOMATION</text>
+
+    <rect x="72" y="312" width="182" height="50" rx="4" fill="#071A19" stroke="#2DD4BF" stroke-opacity="0.45"/>
+    <text x="88" y="332" fill="#64748B" font-size="11" letter-spacing="2">RESEARCH MODE</text>
+    <text x="88" y="352" fill="#CCFBF1" font-size="14">END-TO-END</text>
+
+    <rect x="270" y="312" width="182" height="50" rx="4" fill="#07151D" stroke="#38BDF8" stroke-opacity="0.45"/>
+    <text x="286" y="332" fill="#64748B" font-size="11" letter-spacing="2">COMPUTE MODE</text>
+    <text x="286" y="352" fill="#E0F2FE" font-size="14">LOCAL-FIRST</text>
+
+    <rect x="468" y="312" width="182" height="50" rx="4" fill="#111221" stroke="#A78BFA" stroke-opacity="0.45"/>
+    <text x="484" y="332" fill="#64748B" font-size="11" letter-spacing="2">PROOF MODE</text>
+    <text x="484" y="352" fill="#EDE9FE" font-size="14">VERIFIABLE</text>
+  </g>
+
+  <g transform="translate(929 217)">
+    <circle r="150" fill="url(#reactor)"/>
+    <circle r="136" stroke="#164E63" stroke-width="1"/>
+    <circle r="112" stroke="#38BDF8" stroke-opacity="0.34" stroke-dasharray="2 9">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="84" stroke="#5EEAD4" stroke-opacity="0.65" stroke-width="2" stroke-dasharray="38 18 4 18">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="55" fill="#020617" stroke="#A78BFA" stroke-opacity="0.7"/>
+    <path d="M-35 8L-24 8L-17-14L-7 25L4-30L14 17L23-7L35-7" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <circle r="7" fill="#F8FAFC">
+      <animate attributeName="r" values="5;9;5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <g>
+      <circle cy="-112" r="6" fill="#5EEAD4" filter="url(#glow)"/>
+      <circle cx="97" cy="56" r="6" fill="#38BDF8" filter="url(#glow)"/>
+      <circle cx="-97" cy="56" r="6" fill="#C4B5FD" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12">
+    <text x="1092" y="143" fill="#64748B">SENSE</text>
+    <text x="1092" y="160" fill="#BAE6FD">ACTIVE</text>
+    <text x="1080" y="281" fill="#64748B">REASON</text>
+    <text x="1080" y="298" fill="#C4B5FD">ACTIVE</text>
+    <text x="738" y="377" fill="#64748B">OUTPUT CHANNEL</text>
+    <path d="M736 386H1125" stroke="url(#signal)" stroke-width="2" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

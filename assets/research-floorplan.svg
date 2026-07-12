@@ -1,0 +1,109 @@
+<svg width="1200" height="590" viewBox="0 0 1200 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Kenitoa laboratory research floorplan</title>
+  <defs>
+    <linearGradient id="floorBg" x1="0" y1="0" x2="1200" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#030712"/>
+      <stop offset="0.5" stop-color="#06141A"/>
+      <stop offset="1" stop-color="#0B0B17"/>
+    </linearGradient>
+    <linearGradient id="route" x1="176" y1="0" x2="1024" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <pattern id="floorGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#CBD5E1" stroke-opacity="0.045"/>
+    </pattern>
+    <filter id="nodeGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="590" rx="22" fill="url(#floorBg)"/>
+  <rect x="20" y="20" width="1160" height="550" rx="16" fill="url(#floorGrid)" stroke="#334155"/>
+
+  <g font-family="Consolas, 'Courier New', monospace">
+    <text x="52" y="58" fill="#E2E8F0" font-size="16" letter-spacing="3">FACILITY MAP / SIGNAL ROUTING</text>
+    <text x="1044" y="58" fill="#64748B" font-size="12">SCALE 1:N</text>
+    <path d="M52 73H1148" stroke="#334155"/>
+
+    <g stroke="url(#route)" stroke-width="2" stroke-dasharray="8 12" opacity="0.8">
+      <path d="M600 220V146H356"/>
+      <path d="M600 220V146H844"/>
+      <path d="M600 370V444H356"/>
+      <path d="M600 370V444H844"/>
+      <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="3.6s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <rect x="465" y="220" width="270" height="150" rx="74" fill="#061A1C" stroke="#5EEAD4" stroke-width="2"/>
+      <circle cx="600" cy="295" r="51" fill="#020617" stroke="#38BDF8" stroke-dasharray="5 8">
+        <animateTransform attributeName="transform" type="rotate" from="0 600 295" to="360 600 295" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="295" r="11" fill="#5EEAD4" filter="url(#nodeGlow)">
+        <animate attributeName="r" values="8;13;8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="600" y="276" text-anchor="middle" fill="#64748B" font-size="12" letter-spacing="2">LAB CORE</text>
+      <text x="600" y="328" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="700">KENITOA</text>
+      <text x="600" y="349" text-anchor="middle" fill="#99F6E4" font-size="11">QUESTION → SYSTEM → PROOF</text>
+    </g>
+
+    <g>
+      <rect x="72" y="96" width="284" height="150" rx="8" fill="#071A19" stroke="#2DD4BF" stroke-opacity="0.6"/>
+      <path d="M72 126H356" stroke="#2DD4BF" stroke-opacity="0.35"/>
+      <text x="91" y="117" fill="#5EEAD4" font-size="11" letter-spacing="2">WING A / INTELLIGENCE</text>
+      <text x="91" y="159" fill="#F8FAFC" font-size="19" font-weight="700">MIKU</text>
+      <text x="91" y="182" fill="#94A3B8" font-size="12">embodied local AI runtime</text>
+      <text x="91" y="211" fill="#E2E8F0" font-size="14">local-ai</text>
+      <text x="190" y="211" fill="#64748B" font-size="12">expert orchestration</text>
+      <circle cx="334" cy="111" r="4" fill="#5EEAD4" filter="url(#nodeGlow)"/>
+    </g>
+
+    <g>
+      <rect x="844" y="96" width="284" height="150" rx="8" fill="#07151D" stroke="#38BDF8" stroke-opacity="0.6"/>
+      <path d="M844 126H1128" stroke="#38BDF8" stroke-opacity="0.35"/>
+      <text x="863" y="117" fill="#7DD3FC" font-size="11" letter-spacing="2">WING B / INTERFACE</text>
+      <text x="863" y="159" fill="#F8FAFC" font-size="19" font-weight="700">COZYNOTE</text>
+      <text x="863" y="182" fill="#94A3B8" font-size="12">cognitive note environment</text>
+      <text x="863" y="211" fill="#E2E8F0" font-size="14">web builder</text>
+      <text x="976" y="211" fill="#64748B" font-size="12">spatial composition</text>
+      <circle cx="1106" cy="111" r="4" fill="#38BDF8" filter="url(#nodeGlow)"/>
+    </g>
+
+    <g>
+      <rect x="72" y="370" width="284" height="150" rx="8" fill="#0D1320" stroke="#818CF8" stroke-opacity="0.6"/>
+      <path d="M72 400H356" stroke="#818CF8" stroke-opacity="0.35"/>
+      <text x="91" y="391" fill="#A5B4FC" font-size="11" letter-spacing="2">WING C / AUTOMATION</text>
+      <text x="91" y="433" fill="#F8FAFC" font-size="19" font-weight="700">AUTO-FOLDER</text>
+      <text x="91" y="456" fill="#94A3B8" font-size="12">document → safe workspace</text>
+      <text x="91" y="485" fill="#E2E8F0" font-size="14">question engine</text>
+      <text x="219" y="485" fill="#64748B" font-size="12">speech → inquiry</text>
+      <circle cx="334" cy="385" r="4" fill="#818CF8" filter="url(#nodeGlow)"/>
+    </g>
+
+    <g>
+      <rect x="844" y="370" width="284" height="150" rx="8" fill="#130F1D" stroke="#C084FC" stroke-opacity="0.6"/>
+      <path d="M844 400H1128" stroke="#C084FC" stroke-opacity="0.35"/>
+      <text x="863" y="391" fill="#D8B4FE" font-size="11" letter-spacing="2">WING D / SIMULATION</text>
+      <text x="863" y="433" fill="#F8FAFC" font-size="19" font-weight="700">MUWORLD</text>
+      <text x="863" y="456" fill="#94A3B8" font-size="12">rhythm and game systems</text>
+      <text x="863" y="485" fill="#E2E8F0" font-size="14">archive lab</text>
+      <text x="967" y="485" fill="#64748B" font-size="12">web / data / 3D</text>
+      <circle cx="1106" cy="385" r="4" fill="#C084FC" filter="url(#nodeGlow)"/>
+    </g>
+
+    <g fill="#020617" stroke="#475569">
+      <rect x="388" y="116" width="144" height="48" rx="5"/>
+      <rect x="668" y="116" width="144" height="48" rx="5"/>
+      <rect x="388" y="426" width="144" height="48" rx="5"/>
+      <rect x="668" y="426" width="144" height="48" rx="5"/>
+    </g>
+    <g text-anchor="middle" font-size="11">
+      <text x="460" y="136" fill="#64748B">CHANNEL 01</text><text x="460" y="153" fill="#99F6E4">SENSE</text>
+      <text x="740" y="136" fill="#64748B">CHANNEL 02</text><text x="740" y="153" fill="#BAE6FD">INTERACT</text>
+      <text x="460" y="446" fill="#64748B">CHANNEL 03</text><text x="460" y="463" fill="#C7D2FE">TRANSFORM</text>
+      <text x="740" y="446" fill="#64748B">CHANNEL 04</text><text x="740" y="463" fill="#E9D5FF">SIMULATE</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="1200" height="210" viewBox="0 0 1200 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Open Kenitoa repository archive</title>
+  <defs>
+    <linearGradient id="exitBg" x1="0" y1="0" x2="1200" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/><stop offset="0.5" stop-color="#06201E"/><stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="exitLine" x1="78" y1="0" x2="1122" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="exitGlow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="210" rx="20" fill="url(#exitBg)"/>
+  <rect x="20" y="20" width="1160" height="170" rx="13" stroke="#334155"/>
+  <path d="M78 52H1122M78 158H1122" stroke="url(#exitLine)" stroke-width="2" stroke-dasharray="10 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-144" dur="3.4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M340 73L292 105L340 137M860 73L908 105L860 137" stroke="url(#exitLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#exitGlow)"/>
+  <g font-family="Consolas, 'Courier New', monospace" text-anchor="middle">
+    <text x="600" y="82" fill="#64748B" font-size="13" letter-spacing="4">OPEN LABORATORY ARCHIVE</text>
+    <text x="600" y="119" fill="#F8FAFC" font-size="28" font-weight="700" letter-spacing="2">ENTER THE REPOSITORY VAULT</text>
+    <text x="600" y="143" fill="#99F6E4" font-size="13">github.com/kenitoa?tab=repositories</text>
+  </g>
+  <circle cx="78" cy="105" r="5" fill="#5EEAD4" filter="url(#exitGlow)"><animate attributeName="opacity" values=".25;1;.25" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="1122" cy="105" r="5" fill="#A78BFA" filter="url(#exitGlow)"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+</svg>
