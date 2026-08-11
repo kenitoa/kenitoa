@@ -1,25 +1,85 @@
-<svg width="1200" height="210" viewBox="0 0 1200 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Open Kenitoa repository archive</title>
+<svg width="1200" height="250" viewBox="0 0 1200 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Open Kenitoa public portfolio</title>
+  <desc id="desc">A compact flowchart call-to-action panel linking to the Kenitoa public repository portfolio.</desc>
   <defs>
-    <linearGradient id="exitBg" x1="0" y1="0" x2="1200" y2="210" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#020617"/><stop offset="0.5" stop-color="#06201E"/><stop offset="1" stop-color="#0B1020"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17181C"/>
+      <stop offset=".55" stop-color="#173C3A"/>
+      <stop offset="1" stop-color="#5D3428"/>
     </linearGradient>
-    <linearGradient id="exitLine" x1="78" y1="0" x2="1122" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#5EEAD4"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
-    <filter id="exitGlow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow" x="-20%" y="-50%" width="140%" height="200%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity=".25"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" stroke="#F0C04A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .label{font-family:Inter,Segoe UI,Arial,sans-serif}
+      .mono{font-family:SFMono-Regular,Consolas,Liberation Mono,monospace}
+      .title{font-size:32px;font-weight:820;fill:#FFFFFF}
+      .small{font-size:13px;fill:#D9E7E4}
+      .chip{font-size:12px;font-weight:800;letter-spacing:.8px;fill:#17181C}
+    </style>
   </defs>
-  <rect width="1200" height="210" rx="20" fill="url(#exitBg)"/>
-  <rect x="20" y="20" width="1160" height="170" rx="13" stroke="#334155"/>
-  <path d="M78 52H1122M78 158H1122" stroke="url(#exitLine)" stroke-width="2" stroke-dasharray="10 14">
-    <animate attributeName="stroke-dashoffset" from="0" to="-144" dur="3.4s" repeatCount="indefinite"/>
-  </path>
-  <path d="M340 73L292 105L340 137M860 73L908 105L860 137" stroke="url(#exitLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#exitGlow)"/>
-  <g font-family="Consolas, 'Courier New', monospace" text-anchor="middle">
-    <text x="600" y="82" fill="#64748B" font-size="13" letter-spacing="4">OPEN LABORATORY ARCHIVE</text>
-    <text x="600" y="119" fill="#F8FAFC" font-size="28" font-weight="700" letter-spacing="2">ENTER THE REPOSITORY VAULT</text>
-    <text x="600" y="143" fill="#99F6E4" font-size="13">github.com/kenitoa?tab=repositories</text>
+
+  <rect width="1200" height="250" rx="26" fill="url(#bg)"/>
+  <g opacity=".18">
+    <animate attributeName="opacity" values=".12;.24;.12" dur="6s" repeatCount="indefinite"/>
+    <path d="M70 62H1130M70 125H1130M70 188H1130" stroke="#FFFFFF"/>
+    <path d="M150 35V215M330 35V215M510 35V215M690 35V215M870 35V215M1050 35V215" stroke="#FFFFFF"/>
   </g>
-  <circle cx="78" cy="105" r="5" fill="#5EEAD4" filter="url(#exitGlow)"><animate attributeName="opacity" values=".25;1;.25" dur="1.6s" repeatCount="indefinite"/></circle>
-  <circle cx="1122" cy="105" r="5" fill="#A78BFA" filter="url(#exitGlow)"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="5.6s" repeatCount="indefinite"/>
+    <rect x="72" y="72" width="170" height="84" rx="16" fill="#FFFFFF"/>
+    <text x="103" y="108" class="mono chip">START</text>
+    <text x="104" y="135" class="label" font-size="20" font-weight="760" fill="#17181C">idea</text>
+  </g>
+  <path d="M242 114H342" stroke="#F0C04A" stroke-width="3" stroke-dasharray="10 12" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2.3s" repeatCount="indefinite"/>
+  </path>
+  <circle cy="114" r="5" fill="#F0C04A">
+    <animate attributeName="cx" values="258;326;258" dur="2.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;1;.2" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0" dur="5.8s" repeatCount="indefinite"/>
+    <rect x="342" y="72" width="190" height="84" rx="16" fill="#FFFFFF"/>
+    <text x="374" y="108" class="mono chip">BUILD</text>
+    <text x="374" y="135" class="label" font-size="20" font-weight="760" fill="#17181C">interface</text>
+  </g>
+  <path d="M532 114H632" stroke="#F0C04A" stroke-width="3" stroke-dasharray="10 12" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2.3s" begin=".25s" repeatCount="indefinite"/>
+  </path>
+  <circle cy="114" r="5" fill="#F0C04A">
+    <animate attributeName="cx" values="548;616;548" dur="2.3s" begin=".25s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;1;.2" dur="2.3s" begin=".25s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="6s" repeatCount="indefinite"/>
+    <rect x="632" y="72" width="190" height="84" rx="16" fill="#FFFFFF"/>
+    <text x="664" y="108" class="mono chip">VERIFY</text>
+    <text x="664" y="135" class="label" font-size="20" font-weight="760" fill="#17181C">local proof</text>
+  </g>
+  <path d="M822 114H902" stroke="#F0C04A" stroke-width="3" stroke-dasharray="10 12" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2.3s" begin=".5s" repeatCount="indefinite"/>
+  </path>
+  <circle cy="114" r="5" fill="#F0C04A">
+    <animate attributeName="cx" values="836;890;836" dur="2.3s" begin=".5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;1;.2" dur="2.3s" begin=".5s" repeatCount="indefinite"/>
+  </circle>
+
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="6.2s" repeatCount="indefinite"/>
+    <rect x="902" y="52" width="226" height="124" rx="20" fill="#F0C04A"/>
+    <text x="934" y="91" class="mono chip">OPEN</text>
+    <text x="934" y="121" class="label" font-size="24" font-weight="820" fill="#17181C">repository</text>
+    <text x="934" y="148" class="label" font-size="24" font-weight="820" fill="#17181C">map</text>
+    <text x="934" y="164" class="mono" font-size="11" fill="#3A3121">github.com/kenitoa</text>
+  </g>
+
+  <text x="72" y="210" class="label title">Follow the public work as a flow.</text>
+  <text x="780" y="210" class="mono small">local-first / visible-flow / public-record</text>
 </svg>
