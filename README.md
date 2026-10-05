@@ -182,10 +182,10 @@
 <summary>공개 저장소 메타데이터 확인</summary>
 
 <!-- metadata:start -->
-확인일: 2026-09-28 (UTC)
+확인일: 2026-10-05 (UTC)
 
 - [local-ai](https://github.com/kenitoa/local-ai) · 저장소 push: 2026-06-02 · 공개 릴리스 없음
-- [CozyNote](https://github.com/kenitoa/CozyNote) · 저장소 push: 2026-06-30 · 공개 릴리스 없음
+- [CozyNote](https://github.com/kenitoa/CozyNote) · 저장소 push: 2026-09-29 · 공개 릴리스 없음
 - [-3D-](https://github.com/kenitoa/-3D-) · 저장소 push: 2026-05-11 · 공개 릴리스 없음
 <!-- metadata:end -->
 
