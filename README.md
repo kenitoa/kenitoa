@@ -1,195 +1,254 @@
-<p align="center"><img src="assets/cover.svg" width="100%" alt="KENITOA — Software for work, thought, and play. 로컬 AI, 개인 작업 도구, 인터랙티브 경험을 만드는 작업실"></p>
+<!-- KENITOA / NEON ATLAS. Motion panels are illustrations; project evidence is linked below. -->
 
-<div align="center">
+![KENITOA — NEON ATLAS. 시안·보라·핑크의 유기적인 파형이 움직이는 타이틀.](https://capsule-render.vercel.app/api?type=venom&color=0:06B6D4,50:7C3AED,100:EC4899&height=300&text=KENITOA&fontSize=110&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=NEON%20ATLAS&descSize=36&descAlignY=65)
 
-# KENITOA
+<p align="center">
+  <strong>AI를 도구로 연결하고, 아이디어를 사용할 수 있는 경험으로 만듭니다.</strong><br>
+  로컬 AI 에이전트, 데스크톱 도구, 웹 3D와 게임을 개발합니다.
+</p>
 
-**상상한 것을 직접 사용할 수 있는 소프트웨어로 만듭니다.**
+![Local AI Systems · Tools for Everyday Work · Interactive Worlds 순서로 나타나는 소개.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&duration=2600&pause=1400&color=C4B5FD&background=0B1020&center=true&vCenter=true&width=640&height=55&lines=Local+AI+Systems;Tools+for+Everyday+Work;Interactive+Worlds&repeat=false)
 
-로컬 AI부터 개인 작업 도구, 게임과 공간 탐색까지.<br>
-정보를 다루고, 작업하고, 새로운 경험을 만나는 방식을 실험합니다.
+<p align="center"><strong>LOCAL AI &nbsp; / &nbsp; DESKTOP TOOLS &nbsp; / &nbsp; WEB 3D &nbsp; / &nbsp; GAMES</strong></p>
 
-[대표 프로젝트](#selected-work) · [전체 프로젝트](#explore-my-projects) · [개발 기록](https://kiseno3231.tistory.com) · [GitHub](https://github.com/kenitoa?tab=repositories)
-
-</div>
-
-복잡한 실행 과정을 다루기 쉬운 화면으로 정리하고, 반복되는 작업을 도구로 만들며, 정보와 공간을 탐색하는 경험을 구현합니다. 아래에서는 대표작의 화면과 사용 흐름을 먼저 보고, 관심 있는 프로젝트의 코드와 설계 기록으로 이동할 수 있습니다.
+[대표작](#selected-work) · [추가 프로젝트](#more-projects) · [개발 방식](#how-i-build) · [기술](#tools-in-practice) · [전체 프로젝트](#project-archive) · [개발 기록](https://kiseno3231.tistory.com/)
 
 ---
 
 ## Selected Work
 
-**실행을 연결하는 AI · 생각을 담는 도구 · 공간을 읽는 인터페이스**
+**공간을 탐색하고, 정보를 연결하고, 음악을 플레이합니다.**
 
-### 01 / Local AI
+### 01 / 3D Campus
 
-**로컬 모델을 하나의 사용 경험으로.**
+[![3D CAMPUS — 건물과 공간을 연결하는 탐색 경험을 표현한 움직이는 파형. 실제 화면은 아래에서 펼쳐 볼 수 있습니다.](https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,50:6D28D9,100:7C3AED&height=190&section=header&text=3D%20CAMPUS&fontSize=64&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42)](https://github.com/kenitoa/-3D-)
 
-<a href="https://github.com/kenitoa/local-ai"><img src="assets/local-ai.png" width="100%" alt="Local AI 공개 웹 UI 소스를 로컬에서 연 초기 화면. 모델 서버 연결과 응답 생성은 이 캡처에서 검증하지 않았습니다."></a>
+**공간을 둘러보며 정보를 찾는 캠퍼스 인터페이스.**
 
-모델 경로와 실행 명령을 일일이 다루는 부담을 줄이고, 모델 선택·채팅·AI 마켓·로그 확인을 Windows 데스크톱 인터페이스에 모았습니다.
+Babylon.js 3D 장면에 건물·공간 검색과 상세 정보를 연결했습니다. 지도에서 살펴보는 경험과 자료를 검토하고 공개하는 흐름을 함께 설계합니다.
 
-- **사용 흐름:** 실행 도구 시작 → 모델 선택 → 대화 → 실행 상태와 로그 확인.
-- **설계 선택:** 웹 UI를 WPF의 WebView2에 표시하고, ASP.NET API를 통해 실행 계층과 연결합니다.
-- **현재 범위:** 공개 문서 기준 Ollama adapter, 공통 Expert 구조, 규칙 기반 라우팅, Single/Pipeline 실행 기반을 갖춘 MVP입니다.
-- **다음 과제:** 병렬 실행, Judge 품질 평가, fallback 고도화는 확장 영역으로 구분합니다.
+- **사용 흐름** — 캠퍼스 탐색 → 건물·공간 검색 → 상세 정보와 출처 확인.
+- **설계 포인트** — 3D·2D·문자 탐색과 정보 패널을 연결하고, 자료의 승인·공개 상태를 구분합니다.
 
-`C#` `ASP.NET` `WPF / WebView2` `Ollama`
+`TypeScript` `Babylon.js` `Node.js` `SQLite / libSQL`
 
-[코드 보기](https://github.com/kenitoa/local-ai) · [실행 방법](https://github.com/kenitoa/local-ai#빠른-실행) · [설계 기록](https://github.com/kenitoa/local-ai#핵심-원리)
-
-<sub>화면은 공개 UI 소스의 초기 상태입니다. 실제 모델 추론이나 데스크톱 통합 실행을 증명하는 시연은 아닙니다.</sub>
-
-### 02 / CozyNote
-
-**생각을 적고 다시 찾아보는 개인 작업공간.**
-
-<a href="https://github.com/kenitoa/CozyNote"><img src="assets/cozynote.png" width="100%" alt="CozyNote 저장소에 공개된 메모 작업공간 이미지"></a>
-
-메모를 블록 단위로 구성하고 로컬에 보관하는 데스크톱 노트 앱입니다. 작성·정리·검색 흐름과 저장 상태를 한 화면에서 다룹니다.
-
-- **사용 흐름:** 메모 생성 → 제목과 블록 편집 → 자동 저장 → 검색과 필터로 다시 찾기.
-- **설계 선택:** JavaFX로 편집 화면을 구성하고 SQLite에 메모와 설정을 저장합니다. 블록은 메모의 JSON 필드로 관리합니다.
-- **현재 범위:** 공개 문서에 블록 편집, 입력 후 자동 저장, 저장 상태 표시, 검색·필터와 체크리스트 보상이 기록되어 있습니다.
-- **화면과 기능:** 음악·방 꾸미기 위젯 UI의 존재를 전체 재생·게임 기능의 검증 완료로 해석하지 않습니다.
-
-`Java` `JavaFX` `SQLite` `Gradle`
-
-[코드 보기](https://github.com/kenitoa/CozyNote) · [실행 방법](https://github.com/kenitoa/CozyNote#실행) · [데이터 모델](https://github.com/kenitoa/CozyNote#데이터-모델)
-
-<sub>저장소에 게시된 이미지를 사용했습니다. 이번 프로필 개편에서 앱 실행과 저장·복원 동작을 별도로 검증한 것은 아닙니다.</sub>
-
-### 03 / 3D Campus
-
-**공간을 둘러보며 정보를 찾는 캠퍼스 지도.**
-
-<a href="https://github.com/kenitoa/-3D-"><img src="assets/campus-3d.png" width="100%" alt="공개 소스로 렌더링한 한신대학교 경기캠퍼스 Babylon.js 3D 탐색 화면"></a>
-
-흩어진 캠퍼스 건물·지형·층별 자료를 브라우저에서 탐색할 수 있는 공간 인터페이스로 구성합니다.
-
-- **사용 흐름:** 캠퍼스 이동 → 건물 선택 → 층별 정보와 조사 근거 확인.
-- **설계 선택:** Babylon.js 정적 페이지에 3D 장면과 상세 패널을 결합합니다.
-- **현재 범위:** 공개 자료를 바탕으로 구성한 건물과 지형, 내부 기능 정보입니다. 정밀 측량 모델이나 공식 실내 도면과 동일하다는 의미는 아닙니다.
-- **정보의 확실성:** 확인된 자료와 공개 근거 기반 추정 영역을 구분합니다.
-
-`JavaScript` `Babylon.js` `Static Web`
+[코드 보기 ↗](https://github.com/kenitoa/-3D-) · [구현·검증 기록 ↗](https://github.com/kenitoa/-3D-/blob/main/docs/validation.md)
 
 <details>
-<summary>건물을 선택한 뒤의 층별 상세 화면</summary>
+<summary>실제 캠퍼스 화면과 확인 범위 펼치기</summary>
 
-<img src="assets/campus-detail.png" width="100%" alt="만우관 층별 평면과 확인된 내부 요소를 보여주는 상세 패널">
+![공개 QA 기록의 실제 3D 캠퍼스와 탐색 패널 화면.](https://raw.githubusercontent.com/kenitoa/-3D-/main/evidence/screenshots/refinement-live-desktop.png)
+
+[모바일 QA 화면 보기](https://raw.githubusercontent.com/kenitoa/-3D-/main/evidence/screenshots/refinement-live-mobile.png)
+
+공개 소스와 QA 기록에 근거한 소개입니다. 정밀 측량 모델, 학교 전체 API 연동, 현장 접근성·실기기 XR 검증은 별도의 확인 범위입니다.
 
 </details>
 
-[코드 보기](https://github.com/kenitoa/-3D-) · [실행 방법](https://github.com/kenitoa/-3D-#실행-방법) · [조사 근거](https://github.com/kenitoa/-3D-/blob/main/search.md)
+---
+
+### 02 / AI Librarian Agent
+
+[![AI LIBRARIAN — 도서 검색, 이용자별 기억, 근거 기반 답변을 나타내는 애니메이션.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=2200&pause=1500&color=67E8F9&background=0B1020&center=true&vCenter=true&multiline=true&width=640&height=132&lines=SEARCH+%3E+TOOL+EVIDENCE;USER+MEMORY+%3E+CONTEXT;GROUNDED+REPLIES&repeat=true)](https://github.com/kenitoa/AI-Librarian-Agent)
+
+**검색 결과와 이용자별 기억을 연결하는 로컬 도서관 에이전트.**
+
+수업 자료의 도서 목록을 검색하고, 이용자의 독서 선호를 기억하며, 도구 결과에 근거해 답합니다. 입력 가드레일과 최종 응답 검증을 대화 흐름에 연결했습니다.
+
+- **사용 흐름** — 질문 → 도서 검색 도구 → 이용자별 문맥 → 근거 기반 안내.
+- **설계 포인트** — 모델의 도구 선택과 필수 검증 호출을 구분하고, 제공되지 않은 정보는 명확히 안내합니다.
+
+`Python` `LangChain / LangGraph` `Ollama / Qwen` `Scoped Memory`
+
+[▶ 실제 CMD 데모](https://youtu.be/6JLd9IuQius) · [코드 보기 ↗](https://github.com/kenitoa/AI-Librarian-Agent) · [실모델 검증 기록 ↗](https://github.com/kenitoa/AI-Librarian-Agent/blob/main/evidence/live-final.json)
+
+<details>
+<summary>데이터·메모리·검증 범위 펼치기</summary>
+
+공개 README에는 단위 검사와 실제 로컬 모델 시나리오의 실행 기록이 있습니다. 위 데모와 기록은 해당 저장소의 검증 근거이며, 프로필을 읽는 시점의 모델 서버 상태를 뜻하지 않습니다.
+
+검색 대상은 수업 자료에 제공된 11권의 제목·저자입니다. 실제 도서관 API·대출 처리·RAG·영구 DB는 포함하지 않으며, 이용자별 기억은 프로세스 종료 시 소멸합니다.
+
+</details>
 
 ---
 
-## Explore My Projects
+### 03 / MuWorld
 
-관심 있는 분야에서 시작하세요. 아래 분류는 탐색을 위한 묶음이며, 저장소 간 실행 의존 관계를 의미하지 않습니다.
+[![MUWORLD — 보라와 핑크 파형이 움직이는 리듬게임 타이틀. 실제 곡 선택 화면은 아래에서 펼쳐 볼 수 있습니다.](https://capsule-render.vercel.app/api?type=venom&color=0:4F46E5,50:9333EA,100:EC4899&height=200&text=MUWORLD&fontSize=76&fontColor=FFFFFF&animation=twinkling&fontAlignY=52)](https://github.com/kenitoa/MuWorld)
 
-### AI & Language
+**음악을 분석하고, 채보를 만들고, 직접 플레이하는 리듬게임.**
 
-- [**local-ai**](https://github.com/kenitoa/local-ai) — Windows 로컬 AI 채팅과 모델 실행을 묶는 데스크톱 시스템.
-- [**text-to-make-question**](https://github.com/kenitoa/text-to-make-question) — 한국어 발화의 핵심어를 찾아 후속 질문으로 변환하는 규칙 기반 Python 도구.
+C#으로 만든 Windows 리듬게임입니다. 다양한 키 구성과 노트 유형에 입력 보정·리플레이·차트 편집을 연결해, 곡을 준비하고 플레이를 돌아보는 과정을 구성했습니다.
 
-### Personal Tools
+- **사용 흐름** — 곡 선택 → 채보 준비·난이도 선택 → 플레이 → 기록·리플레이 확인.
+- **설계 포인트** — 음악 분석과 패턴 생성, 타이밍 설정과 편집 기능을 함께 다룹니다.
 
-- [**CozyNote**](https://github.com/kenitoa/CozyNote) — 블록형 메모와 로컬 저장을 결합한 작업공간.
-- [**auto-folder**](https://github.com/kenitoa/auto-folder) — 문서의 제목과 트리 구조를 폴더 구조로 변환하는 도구.
-- [**PC-search-all-file**](https://github.com/kenitoa/PC-search-all-file) — 드라이브 확인, 색인 생성, 파일 이름·경로 검색을 분리한 도구.
+`C#` `.NET 9` `Windows Forms` `Rhythm Game`
 
-### Creation & Play
+[코드 보기 ↗](https://github.com/kenitoa/MuWorld) · [품질 검증 기록 ↗](https://github.com/kenitoa/MuWorld/blob/main/front%20interface/docs/quality-validation.md)
 
-- [**automade-web-site**](https://github.com/kenitoa/automade-web-site) — 화면 구성 요소를 배치하고 웹사이트를 만드는 제작 도구.
-- [**MuWorld**](https://github.com/kenitoa/MuWorld) — 음악과 플레이 경험을 다루는 리듬게임 프로젝트.
-- [**3D Campus / -3D-**](https://github.com/kenitoa/-3D-) — 캠퍼스 지형·건물·층별 정보를 탐색하는 브라우저 인터페이스.
+<details>
+<summary>실제 곡 선택 화면과 확인 범위 펼치기</summary>
 
-### Knowledge & Archives
+![MuWorld 저장소에 공개된 실제 네온 계열 곡 선택 UI.](https://raw.githubusercontent.com/kenitoa/MuWorld/main/media/image.png)
 
-- [**War-Achive**](https://github.com/kenitoa/War-Achive) — 역사적 정보와 구전을 JSON 양식으로 모으는 전쟁사 아카이브 프로젝트.
-- [**warsachive**](https://github.com/kenitoa/warsachive) — 공개 JSON 기록을 정적 페이지로 발행하는 아카이브 프런트엔드.
+공개 소스·화면·품질 문서를 바탕으로 소개합니다. 자동 검사와 실제 청감·사람 플레이·모든 코덱 및 기기에서의 확인은 서로 다른 검증입니다.
 
-### Small Experiments
+</details>
 
-- [**mini-project**](https://github.com/kenitoa/mini-project) — 알고리즘과 작은 로직 구현을 모은 실험장.
-- [**kenitoa**](https://github.com/kenitoa/kenitoa) — 프로젝트와 개발 기록을 연결하는 현재 프로필.
+---
+
+## More Projects
+
+**일상에서 사용하는 도구부터, 직접 만드는 작업공간까지.**
+
+### Local AI / 로컬 모델을 하나의 Windows 작업공간으로
+
+모델 선택·대화·마켓·로그 확인을 데스크톱 인터페이스에 모았습니다. WPF의 WebView2 화면과 ASP.NET API, Ollama 실행 계층을 연결합니다.
+
+`C#` `ASP.NET Core` `WPF / WebView2` `Ollama`
+
+[코드·실행 방법 ↗](https://github.com/kenitoa/local-ai)
+
+<details>
+<summary>초기 UI 화면과 현재 MVP 범위</summary>
+
+![Local AI 공개 웹 UI 소스를 연 초기 화면. 실제 모델 응답이나 WPF 통합 실행의 증거는 아닙니다.](https://raw.githubusercontent.com/kenitoa/kenitoa/main/assets/local-ai.png)
+
+현재 공개 문서는 Ollama adapter, 공통 Expert 구조, 규칙 기반 라우팅, Single/Pipeline 기반을 MVP로 설명합니다. 병렬 실행 고도화·Judge 평가·자동 fallback은 향후 확장 영역입니다. 위 이미지는 초기 웹 UI이며 실제 모델 추론을 시연한 화면은 아닙니다.
+
+</details>
+
+### Automade / 화면 편집에서 실행 가능한 웹 결과물까지
+
+캔버스와 속성 패널에서 화면을 편집하고 반응형 미리보기를 확인합니다. 프로젝트 저장·복구와 소스·빌드·독립 실행 패키지 생성을 연결한 웹 제작 도구입니다.
+
+`React` `TypeScript` `Vite / Node.js` `SQLite`
+
+[코드·구현 범위 ↗](https://github.com/kenitoa/automade-web-site)
+
+### CozyNote / 기록과 음악, 작은 카페가 함께 있는 작업공간
+
+JavaFX로 만든 카페·음악·메모 작업공간입니다. 리치 텍스트 메모의 검색·분류·자동 저장에 휴지통·이전 버전·백업 복원을 연결합니다.
+
+`Java 21` `JavaFX` `SQLite` `Desktop App`
+
+[코드 보기 ↗](https://github.com/kenitoa/CozyNote) · [카페 개편 기록 ↗](https://github.com/kenitoa/CozyNote/blob/main/docs/cafe-redesign.md)
+
+### Beyond the Showcase
+
+- **[warsachive](https://github.com/kenitoa/warsachive)** — 역사 자료를 검색·연표·주제로 탐색하는 웹·모바일 아카이브. 주장별 출처와 콘텐츠 검수 흐름을 함께 다룹니다.
+- **[Project-virtual-AI](https://github.com/kenitoa/Project-virtual-AI)** — 협업 중인 가상 AI 캐릭터 제어 기반. 공개 `main`의 비동기 대기열·취소·늦은 응답 차단·제한된 대화 기록을 중심으로 소개합니다. 음성·아바타·방송 통합은 공개 문서의 후속 범위입니다.
 
 ---
 
 ## How I Build
 
-**사용자에게는 이해할 수 있는 흐름을, 구현에는 확인할 수 있는 근거를 남깁니다.**
+**화면에서 이해할 수 있는 흐름을 만들고, 코드에서 확인할 수 있는 근거를 남깁니다.**
 
-| 설계 질문 | 프로젝트에서의 선택 |
-| --- | --- |
-| 복잡한 실행을 어떻게 다루기 쉽게 만들까? | Local AI에서 화면·API·모델 실행 계층을 나누고, 실행 로그로 상태를 확인합니다. |
-| 작성 중인 생각을 어떻게 보관할까? | CozyNote에서 블록 편집과 SQLite 저장을 연결하고 저장 상태를 보여줍니다. |
-| 시각화의 근거를 어떻게 전달할까? | 3D Campus에서 조사 자료와 추정 범위를 구분해 공간 정보의 확실성을 설명합니다. |
+**01 / 실행 상태를 드러냅니다.**
+Local AI의 실행 로그와 Project-virtual-AI의 요청·취소 흐름처럼, 사용자가 진행과 실패를 이해할 수 있는 경계를 만듭니다.
 
-<details>
-<summary><strong>설계 기록 더 읽기</strong></summary>
+**02 / 작업을 보존합니다.**
+CozyNote와 Automade에서 저장·복원·실패 상태를 작업 흐름에 포함합니다. 작성한 내용과 다시 돌아오는 경험을 함께 다룹니다.
 
-- [Local AI — UI와 실행 런타임의 책임](https://github.com/kenitoa/local-ai#폴더-설명): 화면을 수정하는 위치와 모델을 실행하는 위치를 구분합니다.
-- [CozyNote — 데이터 모델과 저장 구조](https://github.com/kenitoa/CozyNote#데이터-모델): 메모와 블록을 어떻게 표현하고 보관하는지 기록합니다.
-- [3D Campus — 조사 자료](https://github.com/kenitoa/-3D-/blob/main/search.md): 장면을 구성하는 정보의 근거를 남깁니다.
-- [프로필 자료 출처와 확인 범위](docs/profile-evidence.md): 공개 문서, 이미지 출처, 실행 검증 범위를 구분합니다.
+**03 / 근거와 확인 범위를 남깁니다.**
+AI Librarian의 도구 결과, 3D Campus의 공간 자료, warsachive의 출처를 구분합니다. 구현·검증 기록·추가 확인이 필요한 영역을 각각 설명합니다.
 
-</details>
+---
 
 ## Tools in Practice
 
-사용한 기술을 실제 프로젝트의 역할과 연결합니다. 숙련도 점수 대신 코드와 문서를 통해 확인할 수 있도록 구성했습니다.
+**기술은 실제 프로젝트에서 맡은 역할로 소개합니다.**
 
-| 기술 | 사용한 곳 | 역할 |
-| --- | --- | --- |
-| C# · ASP.NET · WPF | Local AI | 데스크톱 화면과 실행 서비스 연결 |
-| Ollama | Local AI | 로컬 모델 실행 |
-| Java · JavaFX · Gradle | CozyNote | 블록형 편집 UI와 앱 빌드 |
-| SQLite | CozyNote · Text To Make Question | 메모 저장과 한국어 규칙 데이터 관리 |
-| JavaScript · Babylon.js | 3D Campus | 브라우저 3D 장면과 공간 탐색 |
-| Python | PC Search · Text To Make Question | 파일 색인과 언어 규칙 처리 |
-| PowerShell | Auto Folder | 문서 기반 폴더 생성 작업 |
-| Next.js · GitHub Actions | warsachive | 콘텐츠 인덱스와 정적 페이지 발행 |
-
-## Currently Exploring
-
-**2026 기술 방향 — 기존 작업에서 다음 질문으로.**
-
-아래 항목은 프로필 개편과 함께 정리한 **향후 탐구 계획 · Planned** 입니다. 구현 완료나 실험 착수를 뜻하지 않습니다. 실제 실험 기록이 생기면 `Exploring`, 재현 가능한 결과가 있으면 `Implemented`로 갱신합니다.
-
-| 상태 | 주제 | 연결할 작업 · 확인할 결과 |
-| --- | --- | --- |
-| `Planned` | 로컬 AI 도구 호출 | Local AI에서 도구 실행 범위·실행 결과·실패 상태를 사용자가 이해할 수 있는지 확인 |
-| `Planned` | MCP 도구 연결 | 파일 검색과 폴더 생성 미리보기를 AI 환경에서 재사용 가능한 도구로 연결 |
-| `Planned` | AI 평가와 실행 기록 | 모델·환경·대표 입력·실패·취소·응답 시간을 함께 기록하는 평가 문서 작성 |
-| `Planned` | WebGPU와 브라우저 그래픽 | 3D Campus의 기기별 로딩과 탐색 성능을 측정하고 채택 효과 비교 |
-
-[Ollama Tool Calling](https://docs.ollama.com/capabilities/tool-calling) · [MCP Architecture](https://modelcontextprotocol.io/docs/learn/architecture) · [Babylon.js WebGPU](https://doc.babylonjs.com/setup/support/webGPU/)
-
-<sub>2026년에 새로 등장한 기술이라는 의미가 아니라, 현재 프로젝트에 연결해 검토할 기술 방향입니다.</sub>
-
-## Recent Updates
-
-아래는 최근 커밋 수를 나열하는 대신, 공개 문서에서 확인한 의미 있는 구현 내용을 고른 기록입니다. 날짜는 기능 출시일이 아닌 **문서 확인일**입니다.
-
-- **2026-09-27 · Local AI** — 데스크톱 UI와 API·Ollama 실행 흐름을 한 실행 진입점으로 정리하고 문제 확인용 로그 위치를 안내합니다. [기록](https://github.com/kenitoa/local-ai#빠른-실행)
-- **2026-09-27 · CozyNote** — 블록 편집과 자동 저장 상태를 연결해 작성과 보관 과정을 확인할 수 있도록 구성합니다. [기록](https://github.com/kenitoa/CozyNote#현재-구현-범위)
-- **2026-09-27 · 3D Campus** — 건물 탐색과 층별 정보를 연결하고 자료의 확인 범위와 추정을 구분합니다. [기록](https://github.com/kenitoa/-3D-#프로젝트-목적)
+| 분야 | 기술과 사용한 곳 |
+| :--- | :--- |
+| **AI & Language** | **Python · LangChain · LangGraph · Ollama** — AI Librarian의 도구 호출·문맥·검증, 한국어 질문 변환 도구의 규칙 처리 |
+| **Windows & Desktop** | **C# · ASP.NET · WPF · WebView2 · JavaFX** — Local AI의 실행 계층, MuWorld의 리듬게임, CozyNote의 작업공간 |
+| **Web & Creation** | **TypeScript · React · Vite · Next.js · Node.js** — Automade의 시각 편집·패키지 생성, warsachive의 자료 탐색 |
+| **Space & Data** | **Babylon.js · SQLite · SQL · PowerShell** — 캠퍼스 3D, 로컬 데이터 저장, 언어 규칙과 문서 기반 폴더 생성 |
 
 <details>
-<summary>공개 저장소 메타데이터 확인</summary>
+<summary>다음에 탐구할 질문 / Planned</summary>
+
+아래 항목은 현재 구현 완료가 아닌 향후 탐구 방향입니다.
+
+- **Local AI** — 도구 실행 범위와 실패 상태를 인터페이스에서 어떻게 전달할까?
+- **MCP 도구 연결** — 파일 검색과 폴더 생성 미리보기를 재사용 가능한 도구로 연결할 수 있을까?
+- **AI 평가·실행 기록** — 모델·입력·실패·취소·응답 시간을 함께 비교하는 기록을 어떻게 만들까?
+- **브라우저 그래픽** — 3D Campus의 기기별 로딩·탐색 성능을 측정하고 WebGPU 채택 효과를 비교할 수 있을까?
+
+</details>
+
+---
+
+## Project Archive
+
+**공개 프로젝트를 관심 있는 분야에서 찾아보세요.**
+
+<details>
+<summary>AI & Language / 도구 호출·모델 실행·언어 규칙</summary>
+
+- [AI-Librarian-Agent](https://github.com/kenitoa/AI-Librarian-Agent) — 로컬 도서 검색 에이전트, 이용자별 메모리와 근거 기반 회신.
+- [local-ai](https://github.com/kenitoa/local-ai) — Windows 로컬 AI 데스크톱과 모델 실행 계층.
+- [Project-virtual-AI](https://github.com/kenitoa/Project-virtual-AI) — **협업·진행 중.** 비동기 캐릭터 제어와 요청 취소 기반.
+- [text-to-make-question](https://github.com/kenitoa/text-to-make-question) — 한국어 조사·어미·SQL 규칙으로 일반 발화를 질문으로 변환. 실제 STT 엔진이나 LLM 생성기와 구분합니다.
+
+</details>
+
+<details>
+<summary>Tools & Workspaces / 메모·제작·검색·자동화</summary>
+
+- [CozyNote](https://github.com/kenitoa/CozyNote) — 카페·음악·메모와 저장·복구를 다루는 JavaFX 앱.
+- [automade-web-site](https://github.com/kenitoa/automade-web-site) — 웹 시각 편집과 실행 패키지 생성.
+- [PC-search-all-file](https://github.com/kenitoa/PC-search-all-file) — 드라이브 확인·파일 색인·파일명과 경로 검색을 분리한 Python 도구.
+- [auto-folder](https://github.com/kenitoa/auto-folder) — 문서의 명시적 트리와 제목 규칙을 폴더 구조로 변환하는 PowerShell 도구.
+
+</details>
+
+<details>
+<summary>Interactive Worlds / 공간·음악·역사 자료 탐색</summary>
+
+- [-3D- / 3D Campus](https://github.com/kenitoa/-3D-) — 캠퍼스 공간과 자료를 탐색하는 Babylon.js 인터페이스.
+- [MuWorld](https://github.com/kenitoa/MuWorld) — 음악 분석·채보·플레이·편집을 연결한 Windows 리듬게임.
+- [warsachive](https://github.com/kenitoa/warsachive) — 출처와 검수 흐름을 포함한 역사 자료 웹·모바일 아카이브.
+
+</details>
+
+<details>
+<summary>Learning, Collaboration & Profile / 학습·포크·기타 공개 저장소</summary>
+
+- [mini-project](https://github.com/kenitoa/mini-project) — 알고리즘 문서와 Python 학습 실험. 완성 서비스와 구분한 학습 아카이브입니다.
+- [-](https://github.com/kenitoa/-) — **[hhs120121-gif/-](https://github.com/hhs120121-gif/-)의 포크.** 구체적인 본인 기여 범위를 확인하기 전에는 독자 대표작으로 소개하지 않습니다.
+- [War-Achive](https://github.com/kenitoa/War-Achive) — 설명은 있으나 2026-10-16 확인 당시 공개 파일 목록이 비어 있는 저장소입니다. `warsachive`와 별개로 구분합니다.
+- [kenitoa](https://github.com/kenitoa/kenitoa) — 이 프로필과 공개 프로젝트 메타데이터 유지관리.
+
+</details>
+
+<details>
+<summary>공개 저장소 메타데이터 / 기존 자동 갱신 영역</summary>
+
+아래 날짜는 저장소 메타데이터의 확인일·push 날짜이며 기능 출시일이나 운영 검증일이 아닙니다. 자동 갱신 대상은 아래 세 저장소입니다.
 
 <!-- metadata:start -->
-확인일: 2026-10-12 (UTC)
+확인일: 2026-10-16 (UTC)
 
 - [local-ai](https://github.com/kenitoa/local-ai) · 저장소 push: 2026-06-02 · 공개 릴리스 없음
 - [CozyNote](https://github.com/kenitoa/CozyNote) · 저장소 push: 2026-09-29 · 공개 릴리스 없음
 - [-3D-](https://github.com/kenitoa/-3D-) · 저장소 push: 2026-10-09 · 공개 릴리스 없음
 <!-- metadata:end -->
 
-날짜·릴리스 링크만 자동 갱신하며 소개와 대표 변화는 직접 편집합니다. 조회가 실패하면 기존 내용을 유지합니다.
+</details>
+
+<details>
+<summary>프로필의 화면·모션·소개 기준</summary>
+
+모션 패널은 프로젝트의 주제와 흐름을 표현하는 그래픽입니다. 실제 프로젝트 화면·동작 근거는 각 프로젝트의 펼치기 영역과 코드·데모·검증 문서에서 확인할 수 있습니다.
+
+소개는 공개 저장소와 문서 기준입니다. 별도 표기가 없는 외부 API·계정·결제·장비·운영 배포의 성공을 의미하지 않습니다. 모션을 읽지 않아도 제목·설명·링크로 같은 프로젝트를 탐색할 수 있습니다.
+
+타이틀과 파형은 [Capsule Render](https://github.com/kyechan99/capsule-render), 타이핑 모션은 [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg)를 사용합니다. 외부 그래픽 서비스의 응답 상태에 따라 표시가 달라질 수 있습니다.
 
 </details>
 
@@ -197,10 +256,12 @@
 
 ## Find Me
 
-**코드에서 시작해, 제작 과정까지 살펴보세요.**
+**코드에서 시작해, 만드는 과정까지 살펴보세요.**
 
-[전체 공개 저장소](https://github.com/kenitoa?tab=repositories) · [개발 기록 / Tistory](https://kiseno3231.tistory.com) · [공개 소셜 / X](https://x.com/gimdong42753841)
+[GitHub / 공개 저장소 ↗](https://github.com/kenitoa?tab=repositories&type=public) · [Tistory / 개발 기록 ↗](https://kiseno3231.tistory.com/)
 
 프로젝트 질문과 재현 가능한 문제 제보는 해당 저장소의 Issues가 열려 있는 경우 그곳에 남겨주세요.
 
-<sub>KENITOA · Software for work, thought, and play.</sub>
+<p align="center"><strong>KENITOA</strong><br>Software for work, thought, and play.</p>
+
+![시안·보라·핑크 파형으로 마무리하는 NEON ATLAS 푸터.](https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:7C3AED,100:EC4899&height=100&section=footer)
