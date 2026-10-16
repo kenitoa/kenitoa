@@ -1,13 +1,17 @@
 <!-- KENITOA / NEON ATLAS. Motion panels are illustrations; project evidence is linked below. -->
 
-![KENITOA — NEON ATLAS. 시안·보라·핑크의 유기적인 파형이 움직이는 타이틀.](https://capsule-render.vercel.app/api?type=venom&color=0:06B6D4,50:7C3AED,100:EC4899&height=300&text=KENITOA&fontSize=110&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=NEON%20ATLAS&descSize=36&descAlignY=65)
+![KENITOA — NEON ATLAS. 시안·보라·핑크 파형이 움직이는 타이틀.](https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:7C3AED,100:EC4899&height=300&section=header&text=KENITOA&fontSize=110&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=NEON%20ATLAS&descSize=36&descAlignY=65)
 
 <p align="center">
   <strong>AI를 도구로 연결하고, 아이디어를 사용할 수 있는 경험으로 만듭니다.</strong><br>
   로컬 AI 에이전트, 데스크톱 도구, 웹 3D와 게임을 개발합니다.
 </p>
 
-![Local AI Systems · Tools for Everyday Work · Interactive Worlds 순서로 나타나는 소개.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&duration=2600&pause=1400&color=C4B5FD&background=0B1020&center=true&vCenter=true&width=640&height=55&lines=Local+AI+Systems;Tools+for+Everyday+Work;Interactive+Worlds&repeat=false)
+<div align="center">
+
+![Local AI Systems · Tools for Everyday Work · Interactive Worlds 순서로 나타나는 소개.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&duration=2600&pause=1400&color=C4B5FD&background=0B1020&center=true&vCenter=true&width=540&height=55&lines=Local+AI+Systems;Tools+for+Everyday+Work;Interactive+Worlds&repeat=true)
+
+</div>
 
 <p align="center"><strong>LOCAL AI &nbsp; / &nbsp; DESKTOP TOOLS &nbsp; / &nbsp; WEB 3D &nbsp; / &nbsp; GAMES</strong></p>
 
@@ -49,7 +53,11 @@ Babylon.js 3D 장면에 건물·공간 검색과 상세 정보를 연결했습�
 
 ### 02 / AI Librarian Agent
 
-[![AI LIBRARIAN — 도서 검색, 이용자별 기억, 근거 기반 답변을 나타내는 애니메이션.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=2200&pause=1500&color=67E8F9&background=0B1020&center=true&vCenter=true&multiline=true&width=640&height=132&lines=SEARCH+%3E+TOOL+EVIDENCE;USER+MEMORY+%3E+CONTEXT;GROUNDED+REPLIES&repeat=true)](https://github.com/kenitoa/AI-Librarian-Agent)
+<div align="center">
+
+[![AI LIBRARIAN — 도서 검색, 이용자별 기억, 근거 기반 답변을 나타내는 애니메이션.](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=26&duration=2200&pause=1500&color=67E8F9&background=0B1020&center=true&vCenter=true&multiline=true&width=480&height=132&lines=SEARCH+%3E+TOOL+EVIDENCE;USER+MEMORY+%3E+CONTEXT;GROUNDED+REPLIES&repeat=true)](https://github.com/kenitoa/AI-Librarian-Agent)
+
+</div>
 
 **검색 결과와 이용자별 기억을 연결하는 로컬 도서관 에이전트.**
 
@@ -75,7 +83,7 @@ Babylon.js 3D 장면에 건물·공간 검색과 상세 정보를 연결했습�
 
 ### 03 / MuWorld
 
-[![MUWORLD — 보라와 핑크 파형이 움직이는 리듬게임 타이틀. 실제 곡 선택 화면은 아래에서 펼쳐 볼 수 있습니다.](https://capsule-render.vercel.app/api?type=venom&color=0:4F46E5,50:9333EA,100:EC4899&height=200&text=MUWORLD&fontSize=76&fontColor=FFFFFF&animation=twinkling&fontAlignY=52)](https://github.com/kenitoa/MuWorld)
+[![MUWORLD — 보라와 핑크 파형이 움직이는 리듬게임 타이틀. 실제 곡 선택 화면은 아래에서 펼쳐 볼 수 있습니다.](https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:9333EA,100:EC4899&height=200&section=header&text=MUWORLD&fontSize=76&fontColor=FFFFFF&animation=twinkling&fontAlignY=42)](https://github.com/kenitoa/MuWorld)
 
 **음악을 분석하고, 채보를 만들고, 직접 플레이하는 리듬게임.**
 
