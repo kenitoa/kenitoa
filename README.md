@@ -240,7 +240,7 @@ AI Librarian의 도구 결과, 3D Campus의 공간 자료, warsachive의 출처�
 아래 날짜는 저장소 메타데이터의 확인일·push 날짜이며 기능 출시일이나 운영 검증일이 아닙니다. 자동 갱신 대상은 아래 세 저장소입니다.
 
 <!-- metadata:start -->
-확인일: 2026-10-16 (UTC)
+확인일: 2026-10-19 (UTC)
 
 - [local-ai](https://github.com/kenitoa/local-ai) · 저장소 push: 2026-06-02 · 공개 릴리스 없음
 - [CozyNote](https://github.com/kenitoa/CozyNote) · 저장소 push: 2026-09-29 · 공개 릴리스 없음
